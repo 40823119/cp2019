@@ -27,8 +27,6 @@
 <v t="leo.20170709015955.1"><vh>@edit publishconf.py</vh></v>
 <v t="leo.20170709015940.1"><vh>近端</vh></v>
 <v t="yen.20170108171733.6"><vh>@edit local_publishconf.py</vh></v>
-</v>
-<v t="yen.20170224232341.1"><vh>編輯 template</vh>
 <v t="leo.20180115093448.1"><vh>@path theme/attila/templates</vh>
 <v t="leo.20180715212936.1"><vh>@edit article.html</vh></v>
 <v t="leo.20180115093536.1"><vh>@edit base.html</vh></v>
@@ -41,6 +39,8 @@
 </v>
 <v t="leo.20180115142025.1"><vh>保留之前舊的設定檔案</vh></v>
 </v>
+</v>
+<v t="yen.20170224232341.1"><vh>編輯 template</vh>
 <v t="yen.20170224232341.2"><vh>@path theme/pelican-bootstrap3_local/templates</vh>
 <v t="yen.20170224232341.3"><vh>@edit base.html</vh></v>
 </v>
