@@ -56,9 +56,9 @@ Created by [40823119](http://lab.kmol.info/)
 <section data-markdown>
     <script type="text/template">
 # 第一周
-* 老師開始介紹可攜系統，並且介紹dart程式
+* 老師開始教可攜系統，並且介紹dart程式
 * 講解學習這門課的主要目的與將來的去向與使用
-* 最後要買U盤大小最好128G以上
+* 最後要買USB大小最好128G以上
 
     </script>
 </section>
@@ -68,9 +68,9 @@ Created by [40823119](http://lab.kmol.info/)
 <section data-markdown>
     <script type="text/template">
 # 第二週
-* 學習到瞭如何 建立github網站，並且建立一個全新的倉儲CP2019 
+* 學會建立github網站，並建立一個全新的倉儲CP2019 
 * 學會瞭如何使用近端和遠端系統
-* 學習了dart一些基礎程式，並且買了一個新的USB，很開心
+* 學會了一些基礎的dart程式
 
     </script>
 </section>
@@ -81,8 +81,8 @@ Created by [40823119](http://lab.kmol.info/)
     <script type="text/template">
 # 第三週
 * 用gist建立dartpad指令
-* 學習如何使用paoxy進行網路連接
-* 自己主動嘗試連接教室網路
+* 學習用paoxy進行網路連接
+* 學會連接教室網路
 
     </script>
 </section>
@@ -92,9 +92,9 @@ Created by [40823119](http://lab.kmol.info/)
 <section data-markdown>
     <script type="text/template">
 # 第四周
-* 上課自主使用proxy連接學校網路
+* 使用proxy連接學校網路
 * 開始使用遠端系統編輯網頁，並進行可攜系統推送
-* 第一次進行 遠端推送，感受到了可攜系統的奧妙
+* 第一次進行 遠端推送
 
 
 
@@ -220,7 +220,42 @@ Created by [40823119](http://lab.kmol.info/)
 # 第十六週
 * 嘗試畫出美國國旗並將前幾 的程式錄製成影片並發送到老師的issues上面
 * 建立按鈕，建立dartpad的程式按鈕
+*<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<script>// <![CDATA[
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823119&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
 
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823119&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823119&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+// ]]></script>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('main')">main</button><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getDart('function')">Function</button> <button onclick="getDart('fun_parameter')">Function Parameter</button> <button onclick="getDart('fat_arrow')">Fat Arrow</button><button onclick="getDart('for - tp')">for - tp</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button><button onclick="getHtmlDart('list')">temp</button><button onclick="getHtmlDart('USA')">USA flag</button><button onclick="getHtmlDart('rot USA')">rot USA flag</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter0')">Flutter0</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button> <button onclick="getFlutter('flutter4')">Flutter4</button></p>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe width="800" height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823119&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark"></iframe>
 
 
     </script>
