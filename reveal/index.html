@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 <title>
-CMSimfly 網際內容管理
+40823119的簡報
 </title>
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -39,7 +39,7 @@ CMSimfly 網際內容管理
 <div class="slides">
 <section data-markdown>
     <script type="text/template">
-## CMSimfly 網際內容管理
+## Computer Programming
 
 ### KMOLab
 
@@ -47,7 +47,7 @@ CMSimfly 網際內容管理
 Created by [KMOLab](http://lab.kmol.info/)
 </small>
 
-[CMSimfly 網誌](./../blog/index.html)
+[2019Fall CP](./../blog/index.html)
 
 
     </script>
@@ -57,85 +57,190 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 <section data-markdown>
     <script type="text/template">
-# 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+# 第一周
+* 老師開始介紹可攜系統，並且介紹dart程式
+* 講解學習這門課的主要目的與將來的去向與使用
+* 最後要買U盤大小最好128G以上
 
     </script>
 </section>
-
-
-						
-<section>
-<section data-markdown>
-    <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-    </script>
-</section>
-
 
 
 						
 <section data-markdown>
     <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+# 第二週
+* 學習到瞭如何 建立github網站，並且建立一個全新的倉儲CP2019 
+* 學會瞭如何使用近端和遠端系統
+* 學習了dart一些基礎程式，並且買了一個新的USB，很開心
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
     </script>
 </section>
-
 
 
 						
 <section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
+# 第三週
+* 用gist建立dartpad指令
+* 學習如何使用paoxy進行網路連接
+* 自己主動嘗試連接教室網路
 
-### 導入影片 template
-
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </script>
 </section>
 
 
 						
+<section data-markdown>
+    <script type="text/template">
+# 第四周
+* 上課自主使用proxy連接學校網路
+* 開始使用遠端系統編輯網頁，並進行可攜系統推送
+* 第一次進行 遠端推送，感受到了可攜系統的奧妙
+
+
+
+    </script>
 </section>
 
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第五週
+* 上課觀看老師影碟，並學習相關知識
+* 進行網頁自主更新與推送新東西
+
+
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第六週
+* 將dartpad程式推送到github，用gist將 dartpad遷入個人網站上
+* 使用並學會何為for和main的主函式
+<iframe src="https://dartpad.github.i  o" width="800" height="550"></iframe> </script> </section> 
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第七週
+* 學會常微分方程式的dart指令，並且用excel在個人網站遷入圖表
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第八周
+* 使用可攜系統內的pelican內的程式的方式建立Blog 
+* 在blog放入disqus進行可供他人留言
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第十週
+* 將原來推送方法改編為gitextensions推送，學習了新的方法
+* 耤由 建立ssh的鑰匙進行達成不需要輸入密碼就可以推送
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第十一周
+* 用git sparse checkout功能取下github的特定目錄
+* 建立按鈕，建立dartpad的程式按鈕
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第十二週
+* 建立溫度字 串轉化攝氏轉變為華氏
+
+
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第十三週
+* 將dart字串轉變為html 
+* 並且錄製溫度轉換的dart程式和html程式
+
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第十四周
+* 將溫度轉換的html程式轉變為js程式並遷 入到個人網站中
+
+
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第十五週
+* 嘗試將五芒星以html程式呈現
+* 建立按鈕，建立dartpad的程式按鈕
+
+
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第十六週
+* 嘗試畫出美國國旗並將前幾 的程式錄製成影片並發送到老師的issues上面
+* 建立按鈕，建立dartpad的程式按鈕
+
+
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 第十七週
+* 編撰重量轉換的dart程式與html程式並藉由第十六週的美國國旗中繪畫出其他 國家國旗
+* 將國旗的html和重量轉化的html程式轉換為js程式
+* 建立按鈕，建立dartpad的程式按鈕
+
+    </script>
+</section>
+
+						
 </div>
 
 </div>
@@ -149,9 +254,7 @@ make.start()
             progress: true,
             history: true,
             center: true,
-
             transition: 'slide', // none/fade/slide/convex/concave/zoom
-
             // More info https://github.com/hakimel/reveal.js#dependencies
             dependencies: [
                 { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -167,4 +270,3 @@ make.start()
 </body>
 
 </html>
-
